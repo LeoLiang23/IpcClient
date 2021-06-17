@@ -37,6 +37,13 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "GetAge click")
             Log.d(TAG, "GetName ${mIMyAidlInterface?.age ?: ""}")
         }
+        findViewById<View>(R.id.tvGetPeople).setOnClickListener {
+            Log.d(TAG, "tvGetPeople click")
+            val studentList = mIMyAidlInterface?.studentList ?: mutableListOf()
+            studentList.forEach {
+                Log.d(TAG, "GetName ${it.name}  ${it.age} ")
+            }
+        }
     }
 
     private var mIMyAidlInterface: IMyAidlInterface? = null

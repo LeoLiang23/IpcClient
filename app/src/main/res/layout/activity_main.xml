@@ -39,6 +39,17 @@
         app:layout_constraintTop_toBottomOf="@id/tvSayHi"/>
 
     <TextView
+        android:id="@+id/tvGetPeople"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="GetPeople"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGetAge"/>
+
+    <TextView
         android:id="@+id/tvStartService"
         android:layout_width="100dp"
         android:layout_height="50dp"
@@ -47,6 +58,6 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvGetAge"/>
+        app:layout_constraintTop_toBottomOf="@id/tvGetPeople"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
